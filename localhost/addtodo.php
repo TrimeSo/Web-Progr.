@@ -1,6 +1,6 @@
 <?php
     $data = $_GET['list'];
-    if ($data == '' or empty($data)) {
+    if ($data != '' or empty($data)) {
 
         header('Location: ./index.php');
     }

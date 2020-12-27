@@ -23,7 +23,7 @@
         echo '<ul>';
         global $pdo;
         $query = $pdo->query('SELECT * FROM `tasks` ORDER BY `id` DESC');
-        while($tmp = $query->fetch(PDO::FETCH_OBJ)) {
+        while($tmp = $query->fetch(PDO::FETCH_OBJ)) { 
         echo '<li><b>'.$tmp->task.'</b><a href="./del.php?id='.$tmp->id.'"><br><button class="btn btn-danger"> Удалить</button></a>
         <a href ="./taskdone.php?id='.$tmp->id.'"><button class = "btn btn-success"> Выполнить</button></a>
         <a href ="./taskchange.php?id='.$tmp->id.'"><button class = "btn btn-primary"> Изменить</button></a>
